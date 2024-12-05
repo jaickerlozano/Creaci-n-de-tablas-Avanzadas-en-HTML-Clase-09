@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 9 - Texto en HTML</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Página de ejemplos vistos en la clase 5: Texto en HTML">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@bienvenidosaez">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplos vistos en la Clase 9: Tablas avanzadas en HTML</h1>
+        <p><a href="index.html">👈 Volver atrás</a></p>
+        <hr />
+    </header>
+
+
+    <main>
+        <h1>Ejemplo de tabla con unión de filas y columnas a la una celda</h1>
+        <!--Creación de tabla 5x9-->
+        <table border="1">
+          <tr>
+            <!--Unión de dos filas en una celda donde ubicamos la letra A-->
+            <td rowspan="2">A</td>
+            <!--Unión de dos filas y cinco columnas en una celda donde ubicamos la letra B-->
+            <td rowspan="2" colspan="5">B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+          </tr>
+          <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+            <td>M</td>
+            <td>N</td>
+            <!--Unión de tres columnas en una celda donde ubicamos la letra O-->
+            <td colspan="3">O</td>
+          </tr>
+          <tr>
+            <!--Unión de dos filas en una celda donde ubicamos la letra P-->
+            <td rowspan="2">P</td>
+            <!--Unión de dos columnas en una celda donde ubicamos la letra Q-->
+            <td colspan="2">Q</td>
+            <!--Unión de tres columnas en una celda donde ubicamos la letra R-->
+            <td colspan="3">R</td>
+            <!--Unión de tres filas y tres columnas en una celda donde ubicamos la letra S-->
+            <td rowspan="3" colspan="3">S</td>
+          </tr>
+          <tr>
+            <!--Unión de tres columnas en una celda donde ubicamos la letra T-->
+            <td colspan="3">T</td>
+            <!--Unión de dos columnas en una celda donde ubicamos la letra U-->
+            <td colspan="2">U</td>
+          </tr>
+        </table>
+    </main>
+
+    <hr>
+    <footer>
+        © ConquerBlocks 2023 - Todos los derechos reservados
+    </footer>
+</body>
+
+</html>
